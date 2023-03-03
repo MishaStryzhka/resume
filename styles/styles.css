@@ -1,7 +1,15 @@
 body {
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f5f7fa;
 }
+
+p {
+    margin: 0;
+}
+
+/* a {
+    text-decoration: none;
+} */
 
 /* main styles */
 
@@ -19,7 +27,7 @@ body {
     box-shadow: 6px rgba(0, 0, 0, 0.849);
     padding: 105px 90px;
 }
-  
+
 
 /* about styles */
 
@@ -27,42 +35,48 @@ body {
     margin-bottom: 40px;
 }
 
-.about-position{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-bottom: 20px;
-}
+.about-name {
+    margin: 0;
 
-.about-name{
     font-style: normal;
     font-weight: 700;
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 55px;
+    line-height: 127.272727%;
+    /* 70/55 */
     color: #000000;
     margin-bottom: 25px;
 }
 
-.ebaut-description{
+.about-position {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    /* 24/20 */
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.ebaut-description {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #000000;
-    width: 400px;
+    /* width: 400px; */
 }
 
-.author{
+.author {
     text-align: right;
     padding: 0px 50px 0px 20px;
     position: relative;
 }
+
 /* projects styles*/
 
 .projects {
     margin-bottom: 50px;
+    padding: 0 100px;
 }
 
 .title {
@@ -74,11 +88,12 @@ body {
     margin-bottom: 10px;
 }
 
-.project-list{
+.project-list {
     padding: 0;
     margin-left: 15px;
 }
-.projects-item{
+
+.projects-item {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -86,8 +101,14 @@ body {
     color: #000000;
 }
 
+.project {
+    border-bottom: solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+
 .project,
-.project-link{
+.project-link {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -96,10 +117,22 @@ body {
     color: #595959;
 }
 
-.project-link{
+.project-link {
     margin-left: 10px;
 }
-.project-bracket{
+
+.project-description {
+    text-align: justify;
+    margin: 10px;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.project-bracket {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -110,10 +143,10 @@ body {
 /* work styles */
 
 .work {
-  margin-bottom: 45px;
+    margin-bottom: 45px;
 }
 
-.work-position{
+.work-position {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -129,7 +162,8 @@ body {
     line-height: 20px;
     color: #FB6D3A;
 }
-.period{
+
+.period {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -138,7 +172,7 @@ body {
     margin-bottom: 10px;
 }
 
-.line{
+.line {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -146,13 +180,13 @@ body {
     color: #000;
 }
 
-.work-list{
+.work-list {
     padding: 0;
     margin-left: 15px;
-    width: 525px;
+    /* width: 525px; */
 }
 
-.work-list-item{
+.work-list-item {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -162,11 +196,11 @@ body {
 
 /* education styles */
 
-.education {
+/* .education {
     width: 525px;
-}
+} */
 
-.education-position{
+.education-position {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -175,7 +209,7 @@ body {
     margin-bottom: 10px;
 }
 
-.institute{
+.institute {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -184,35 +218,42 @@ body {
     margin-bottom: 10px;
 }
 
-.link-goit{
+.link-goit {
     text-decoration: none;
 }
-.logo-goit{ height: 14px;
+
+.logo-goit {
+    height: 14px;
 
 }
+
 /* sidebar styles */
 
 .sidebar {
     background-color: #1E2939;
     padding-top: 40px;
-    width: 370px;
+    width: 290px;
 }
 
-.photo {
-    width: 370px;
-    margin-bottom: 50px;
+.fhoto {
+    display: block;
+    width: 290px;
+    height: 290px;
+    border-radius: 145px;
+    margin-bottom: 60px;
 }
 
 .contacts,
 .tech-skills,
 .soft-skills,
-.certificate{
+.certificate {
     margin-left: 40px;
 }
 
-.contacts{
+.contacts {
     margin-bottom: 50px;
 }
+
 .contact-type {
     font-style: normal;
     font-weight: 700;
@@ -223,18 +264,19 @@ body {
     margin-right: 10px;
 }
 
-.contact-link{
+.contact-link {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     /* or 171% */
-    
+
     text-decoration-line: underline;
-    
+
     color: #8E949C;
 }
+
 .sidebar-title {
     color: #FFFFFF;
     font-style: normal;
@@ -246,7 +288,7 @@ body {
 
 .tech-skils-list,
 .soft-skils-list,
-.certificate-list{
+.certificate-list {
     color: #fff;
     padding: 0;
     margin-left: 15px;
@@ -254,13 +296,13 @@ body {
 
 .tech-skils-item,
 .soft-skils-item,
-.certificate-item{
+.certificate-item {
     color: #FB6D3A;
 }
 
 .tech-skils-text,
 .soft-skils-text,
-.certificate-text{
+.certificate-text {
     color: #fff;
     font-style: normal;
     font-weight: 400;
